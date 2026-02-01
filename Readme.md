@@ -33,14 +33,7 @@ O aplicativo **Tarefas Kids** foi desenhado para ser intuitivo e divertido. Ele 
 
 ---
 
-## 📸 Screenshots
 
-| Login Moderno | Lista de Tarefas | Câmera Integrada |
-|:---:|:---:|:---:|
-| ![Login](screenshots/login.png) | ![Home](screenshots/home.png) | ![Camera](screenshots/camera.png) |
-*(Adicione seus prints na pasta screenshots)*
-
----
 
 ## 🚀 Como Rodar
 
