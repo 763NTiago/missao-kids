@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <color name="purple_primary">#764ba2</color>
+    <color name="blue_secondary">#667eea</color>
+    <color name="bg_gradient_start">#667eea</color>
+    <color name="bg_gradient_end">#764ba2</color>
+    <color name="text_hint">#A0AEC0</color>
+</resources>
