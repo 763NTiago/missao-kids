@@ -1,7 +1,6 @@
-package com.sttalis.missaokids.api // Confirme seu pacote
+package com.sttalis.missaokids.api
 
-import com.sttalis.missaokids.model.LoginRequest
-import com.sttalis.missaokids.model.Usuario
+import com.sttalis.missaokids.model.*
 import retrofit2.Call
 import retrofit2.http.Body
 import retrofit2.http.GET
@@ -14,4 +13,19 @@ interface TarefasService {
 
     @GET("api/admin/filhos/{paiId}")
     fun listarFilhos(@Path("paiId") paiId: Long): Call<List<Usuario>>
+
+    @POST("api/admin/filhos")
+    fun adicionarFilho(@Body request: FilhoRequest): Call<String>
+
+    @POST("api/admin/tarefas")
+    fun adicionarTarefa(@Body request: TarefaRequest): Call<String>
+
+    @POST("api/admin/recompensas")
+    fun adicionarRecompensa(@Body request: RecompensaRequest): Call<String>
+
+    @GET("api/admin/tarefas/{filhoId}")
+    fun listarTarefasPorFamilia(@Path("filhoId") filhoId: Long): Call<List<TarefaResponse>>
+
+    @GET("api/admin/recompensas/{filhoId}")
+    fun listarRecompensasPorFamilia(@Path("filhoId") filhoId: Long): Call<List<RecompensaResponse>>
 }

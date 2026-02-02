@@ -23,4 +23,13 @@
                 android:title="Configurações" />
         </menu>
     </item>
+
+    <item android:title="Conta">
+        <menu>
+            <item
+                android:id="@+id/nav_sair"
+                android:icon="@android:drawable/ic_lock_power_off"
+                android:title="Sair" />
+        </menu>
+    </item>
 </menu>

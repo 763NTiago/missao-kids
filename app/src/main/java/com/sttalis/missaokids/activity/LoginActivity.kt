@@ -109,7 +109,7 @@ class LoginActivity : AppCompatActivity() {
         val intent = if (perfil == "ROLE_ADMIN" || perfil == "ROLE_RESPONSAVEL") {
             Intent(this, PaisActivity::class.java)
         } else {
-            Intent(this, CriancasActivity::class.java)
+            Intent(this, FilhoActivity::class.java)
         }
         startActivity(intent)
         finish()

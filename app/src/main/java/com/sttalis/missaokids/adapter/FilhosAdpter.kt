@@ -26,7 +26,7 @@ class FilhosAdapter(private val listaFilhos: List<Usuario>) :
         RecyclerView.ViewHolder(binding.root) {
 
         fun bind(filho: Usuario) {
-            binding.tvNomeFilhoLista.text = filho.nomeExibicao ?: filho.login
+            binding.tvNomeFilhoLista.text = filho.nome ?: filho.login
             binding.tvTarefasPendentes.text = "0 tarefas pendentes"
             binding.pbProgressoFilho.progress = 50
             binding.tvPorcentagem.text = "50%"
