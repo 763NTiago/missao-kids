@@ -1,4 +1,4 @@
-package com.sttalis.tarefas
+package com.sttalis.missaokids
 
 import org.junit.Test
 

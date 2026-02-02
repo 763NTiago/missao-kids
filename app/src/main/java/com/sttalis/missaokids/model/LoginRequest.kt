@@ -1,4 +1,4 @@
-package com.sttalis.tarefas.data.model
+package com.sttalis.missaokids.model
 
 data class LoginRequest(
     val login: String,

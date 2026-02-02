@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@android:drawable/ic_menu_day"
+            android:title="Minhas Tarefas" />
+        <item
+            android:id="@+id/nav_recompensas"
+            android:icon="@android:drawable/star_on"
+            android:title="Recompensas" />
+    </group>
+
+    <item android:title="Área dos Pais">
+        <menu>
+            <item
+                android:id="@+id/nav_perfil"
+                android:icon="@drawable/ic_person"
+                android:title="Gerenciar Perfil (Pais)" />
+            <item
+                android:id="@+id/nav_config"
+                android:icon="@android:drawable/ic_menu_preferences"
+                android:title="Configurações" />
+        </menu>
+    </item>
+</menu>

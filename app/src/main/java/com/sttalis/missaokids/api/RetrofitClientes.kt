@@ -1,10 +1,10 @@
-package com.sttalis.tarefas.data.api
+package com.sttalis.missaokids.api
 
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
 
 object RetrofitClient {
-    private const val BASE_URL = "http://127.0.0.1:8080/"
+    private const val BASE_URL = "https://ntiago.duckdns.org/"
 
     val instance: TarefasService by lazy {
         val retrofit = Retrofit.Builder()

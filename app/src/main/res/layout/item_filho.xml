@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="16dp"
+    android:layout_marginVertical="8dp"
+    app:cardCornerRadius="16dp"
+    app:cardElevation="4dp"
+    app:cardBackgroundColor="#FFFFFF">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+
+        <ImageView
+            android:id="@+id/ivAvatarFilho"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/ic_person"
+            android:padding="8dp"
+            android:background="@drawable/bg_rainbow_gradient"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+
+        <View
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:background="@drawable/ic_launcher_background"
+            android:backgroundTint="@android:color/white"
+            app:layout_constraintStart_toStartOf="@id/ivAvatarFilho"
+            app:layout_constraintEnd_toEndOf="@id/ivAvatarFilho"
+            app:layout_constraintTop_toTopOf="@id/ivAvatarFilho"
+            app:layout_constraintBottom_toBottomOf="@id/ivAvatarFilho"/>
+        <ImageView
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:src="@drawable/ic_person"
+            android:padding="4dp"
+            app:layout_constraintStart_toStartOf="@id/ivAvatarFilho"
+            app:layout_constraintEnd_toEndOf="@id/ivAvatarFilho"
+            app:layout_constraintTop_toTopOf="@id/ivAvatarFilho"
+            app:layout_constraintBottom_toBottomOf="@id/ivAvatarFilho"/>
+
+        <TextView
+            android:id="@+id/tvNomeFilhoLista"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nome do Filho"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="#333"
+            android:layout_marginStart="16dp"
+            app:layout_constraintStart_toEndOf="@id/ivAvatarFilho"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <TextView
+            android:id="@+id/tvTarefasPendentes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="3 tarefas pendentes"
+            android:textSize="12sp"
+            android:textColor="#666"
+            app:layout_constraintStart_toStartOf="@id/tvNomeFilhoLista"
+            app:layout_constraintTop_toBottomOf="@id/tvNomeFilhoLista"/>
+
+        <ProgressBar
+            android:id="@+id/pbProgressoFilho"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="0dp"
+            android:layout_height="12dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="16dp"
+            android:max="100"
+            android:progress="50"
+            android:progressDrawable="@drawable/progress_rainbow"
+            app:layout_constraintStart_toEndOf="@id/ivAvatarFilho"
+            app:layout_constraintEnd_toStartOf="@id/tvPorcentagem"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvTarefasPendentes"
+            android:layout_marginStart="16dp"/>
+
+        <TextView
+            android:id="@+id/tvPorcentagem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="50%"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:textColor="@color/purple_primary"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="@id/pbProgressoFilho"
+            app:layout_constraintTop_toTopOf="@id/pbProgressoFilho"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>

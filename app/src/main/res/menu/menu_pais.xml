@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_add_filho"
+            android:icon="@drawable/ic_person"
+            android:title="Cadastrar Filho/Responsável" />
+        <item
+            android:id="@+id/nav_add_tarefa"
+            android:icon="@android:drawable/ic_menu_edit"
+            android:title="Adicionar Tarefa" />
+        <item
+            android:id="@+id/nav_add_recompensa"
+            android:icon="@android:drawable/star_on"
+            android:title="Criar Recompensa" />
+    </group>
+
+    <item android:title="Acompanhamento">
+        <menu>
+            <item
+                android:id="@+id/nav_historico"
+                android:icon="@android:drawable/ic_menu_recent_history"
+                android:title="Histórico (Em breve)" />
+            <item
+                android:id="@+id/nav_relatorio"
+                android:icon="@android:drawable/ic_menu_save"
+                android:title="Relatório PDF (Em breve)" />
+        </menu>
+    </item>
+
+    <item android:title="Minha Conta">
+        <menu>
+            <item
+                android:id="@+id/nav_perfil_pai"
+                android:icon="@drawable/ic_person"
+                android:title="Meu Perfil (Foto)" />
+            <item
+                android:id="@+id/nav_sair"
+                android:icon="@android:drawable/ic_lock_power_off"
+                android:title="Sair / Deslogar" />
+        </menu>
+    </item>
+
+</menu>
